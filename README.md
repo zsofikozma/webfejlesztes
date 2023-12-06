@@ -3,7 +3,7 @@ A webfejlesztés tantárgy beadandója
 
 1. Oldal készítőjének neve: Kozma Zsófia Jázmin
 
-2. A weblap URL címe:
+2. A weblap URL címe: https://zsofikozma.github.io/webfejlesztes/
 
 3. A weblapom témája: A weblapom az egy főzőtanfolyamról szól, ahol különböző kurzusokon lehet részt venni. Lehet rá itt online jelentkezni és egy kisebb kvízben is részt lehet venni.
 
