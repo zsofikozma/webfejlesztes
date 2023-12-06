@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kozma Zsófia">
+    <meta name="description" content="Tanfolyan jelentkezes">
+    <meta name="copyright" content="Az oldal kizárólag tanulmányi célú.">
+    <link rel="stylesheet" href="Stilus/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="Kepek/Favicon/favicon.png"/>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({
+        rules: 
+        {
+            veznev: "required",
+            kernev: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            telefon: {
+                required: true,
+                minlength: 13,
+                maxlength: 13
+            },
+            idopont: "required",
+            aszf: "required",
+        },
+        messages: {
+            veznev: "<br> Kérem adja meg a vezetéknevét!",
+            kernev: "<br> Kérem adja meg a keresztnevét!",
+            email: {
+                required: "<br> Kérem adja meg az e-mail címét!",
+                email: "<br> Kérem adja meg az e-mail címét megfelelő formátumban!"
+            },
+            telefon: {
+                required: "<br> Kérem adja meg a telefonszámát!",
+                minlength: "<br> Kérem adja meg a telefonszámát megfelelő formátumban!",
+                maxlength: "<br> Kérem adja meg a telefonszámát megfelelő formátumban!"
+            },
+            idopont: "<br> Kérem válasszon egy időpontot!",
+            aszf: "<br> Kérem fogadja el a feltételeinket! <br>"
+        },
+
+    });
+        });
+        </script> 
+    <title>KoZsó</title>
+</head>
+
+<body>
+    <header>
+        <table class="cimtable">
+            <tr>
+                <td class="appokle"><a href="https://www.tiktok.com/" target="_blank"><img src="Kepek/AppIkonok/tiktok.webp" alt="tiktok"></a></td>
+                <td rowspan="2" class="cim">KoZsó főzőtanfolyam</td>
+                <td class="appokle"><a href="https://www.youtube.com/" target="_blank"><img src="Kepek/AppIkonok/youtube.webp" alt="youtube"></a></td>
+            </tr>
+            <tr>
+                <td class="appokfel"><a href="https://www.facebook.com/" target="_blank"><img src="Kepek/AppIkonok/facebook.webp" alt="facebook"></a></td>
+                <td class="appokfel"><a href="https://www.instagram.com/" target="_blank"><img src="Kepek/AppIkonok/instagram.webp" alt="instagram"></a></td>
+            </tr>
+        </table>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a class="active" href="#">Jelentkezés</a></li>
+                <li><a href="inyenckviz.html">Ínyenc Kvíz</a></li>
+            </ul>
+        </nav>
+        <article class="jelentkezes">
+                <div class="arnyek"><div class="oszlopcim">Gasztronómiai Kalandok Mesterei (A)</div> <br>
+                    Leírás: <br> Fedezd fel a világ gasztronómiai csodáit ezen az izgalmas főzőtanfolyamon! Tanuld meg elkészíteni a világ különböző konyháinak legnépszerűbb fogásait, és ismerd meg azokat a titkokat, amelyek egy étel igazi mesterré teszik.<br><br>
+                <div class="oszlopcim">Vegán Kulináris Varázslat (B)</div> <br>
+                    Leírás: <br> Merülj el a növényi alapú étkezés világában ezen a vegán kulináris tanfolyamon! Ismerd meg, hogyan készíts ízletes és tápláló vegán ételeket, és fedezd fel a vegán konyhaművészet szépségeit egy tapasztalt chef vezetésével.</div>
+        </article> <br>
+        <article class="jelentkezes">
+            <div class="jelentkezo">
+                <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" name="myform" novalidate>
+                    <div class="jelentkezesmegnevezes"><label for="veznev">Vezetéknév: *<br></label>
+                        <input type="text" name="veznev" id="veznev" class="jelentkezourlap" required></div><br>
+                    <div class="jelentkezesmegnevezes"><label for="kernev">Keresztnév: *<br></label>
+                        <input type="text" name="kernev" id="kernev" class="jelentkezourlap" required></div><br>
+                    <div class="jelentkezesmegnevezes"><label for="email">E-mail cím: *<br></label>
+                        <input type="email" name="email" id="email" class="jelentkezourlap" required></div><br>
+                    <div class="jelentkezesmegnevezes"><label for="telefon">Telefonszám: *<br></label>
+                        <input type="tel" name="telefon" id="telefon" placeholder="+36/" class="jelentkezourlap" required></div><br>
+                    <div class="jelentkezesmegnevezes"><label for="idopont">Időpont(ok): *<br></label>
+                        <select name="idopont" id="idopont" class="jelentkezourlap" required>
+                            <option value="" disabled selected>Kérem válasszon egy lehetőséget!</option>
+                            <option value="dec8-10_11-00_A">2023.12.08.-10., 11:00, (A)</option>
+                            <option value="dec14-16_11-00_B">2023.12.14.-16., 11:00, (B)</option>
+                            <option value="dec18-20_10-30_C">2023.12.18.-20., 10:30, (C)</option>
+                            <option value="dec21-23_9-30_D">2023.12.21.-23., 9:30, (D)</option>
+                        </select></div><br>
+                    <div class="jelentkezesmegnevezes"><label for="megjegyzes">Egyéb megjegyzés: (ételérzékenység, allergia stb.)</label><br>
+                        <textarea name="megjegyzes" id="megjegyzes" cols="30" rows="3" class="jelentkezourlap"></textarea></div><br>
+                    <div class="jelentkezesmegnevezes"><input type="checkbox" name="aszf" id="aszf" value="elfogad" required>
+                        <label for="aszf">Adatvédelmi és Általános Szerződési Feltételek elfogadása</label></div><br>
+                    <div class="jelentkezesmegnevezes"><label for="elkuld"></label>
+                        <input type="submit" value="Jelentkezés!" name="elkuld" id="elkuld">
+                    <label for="torles"></label>
+                        <input type="reset" value="Törlés" name="torles" id="torles"></div>
+                </form>
+            </div>
+        </article> <br>
+        <article class="jelentkezes">
+            <div class="arnyek"><div class="oszlopcim">Street Food Kavalkád - Otthoni Verzióban (C)</div> <br>
+                Leírás: <br> Hozd be a világ utcáinak ízeit otthonodba ezen a street food főzőtanfolyamon! Tanuld meg, hogyan készítsd el a különböző országok legnépszerűbb utcai ételeit, és ünnepeld meg a különböző kultúrák sokszínűségét az ízekben.<br><br>
+            <div class="oszlopcim">Édes Művészetek - Cukrászkodás Alapjaitól a Mesterművekig (D)</div> <br>
+                Leírás: <br> Ismerkedj meg a cukrászkodás művészetével ezen az édes főzőtanfolyamon! Tanuld meg a sütemények és desszertek alapjait, majd hódolj el a mesterek által inspirált különleges édes alkotásoknak. Készíts csodálatos tortákat és desszerteket, és válj édesmesterré!</div>
+        </article>
+    </div>
+    <footer>Ez az oldal pusztán gyakorlásra szolgál</footer>
+</body>
+
+</HTML>

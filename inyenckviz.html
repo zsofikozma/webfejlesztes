@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kozma Zsófia">
+    <meta name="description" content="Tanfolyan kvízjáték">
+    <meta name="copyright" content="Az oldal kizárólag tanulmányi célú.">
+    <link rel="stylesheet" href="Stilus/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="Kepek/Favicon/favicon.png"/>
+    <script src="JS/script.js"></script>
+    <title>KoZsó</title>
+</head>
+
+<body>
+    <header>
+        <table class="cimtable">
+            <tr>
+                <td class="appokle"><a href="https://www.tiktok.com/" target="_blank"><img src="Kepek/AppIkonok/tiktok.webp" alt="tiktok"></a></td>
+                <td rowspan="2" class="cim">KoZsó főzőtanfolyam</td>
+                <td class="appokle"><a href="https://www.youtube.com/" target="_blank"><img src="Kepek/AppIkonok/youtube.webp" alt="youtube"></a></td>
+            </tr>
+            <tr>
+                <td class="appokfel"><a href="https://www.facebook.com/" target="_blank"><img src="Kepek/AppIkonok/facebook.webp" alt="facebook"></a></td>
+                <td class="appokfel"><a href="https://www.instagram.com/" target="_blank"><img src="Kepek/AppIkonok/instagram.webp" alt="instagram"></a></td>
+            </tr>
+        </table>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+                <li><a href="jelentkezes.html">Jelentkezés</a></li>
+                <li><a class="active" href="#">Ínyenc Kvíz</a></li>
+            </ul>
+        </nav>
+        <article class="kvizkuponhoz">
+            <h2 class="kvizcim">Kedves Érdeklődőnk!</h2> <br>
+            <div class="kvizleiras">
+            Köszönjük, hogy részt veszel a recept kvízünkön! Nagy öröm számunkra, hogy érdeklődsz a kulináris világ iránt. Az alábbiakban egy rövid leírást találsz a kvízünk részleteiről: <br>
+            Ha hibátlanul kitöltöd a kvízünket és elérheted a maximális pontszámot, mi jutalmazzuk erőfeszítéseidet! Egyedi kuponkódot kapsz, amely 25% kedvezményt biztosít minden recepttanfolyamunkon és eseményünkön. <br>
+            A kuponkódot egyszerűen beválthatod bármelyik jövőbeni jelentkezésednél, így még színesebbé és élvezetesebbé teheted a sütés-főzés mesterműveidet. <br>
+            Győződj meg róla, hogy pontos és hibátlan válaszokat adtál meg a kvíz minden kérdésére, hogy megkapd jutalmadat. Köszönjük a részvételt, és sok sikert kívánunk a kvízhez! <br>
+            Ízletes perceket és jó szórakozást kívánunk! <br>
+            <br>
+            Üdvözlettel, <br>
+            [KoZsó főzőtanfolyam csapata]
+            </div>
+        </article>
+        <article class="kviz">
+        <h2 class="kvizcim">I. Melyik alapanyag nélkülözhetetlen a házi kenyér készítéséhez?</h2>
+            <label><input type="radio" name="elso" id="1-1"><span id="rossz1-1">Cukor</span></label><br>
+            <label><input type="radio" name="elso" id="1-2"><span id="rossz1-2">Tej</span></label><br>
+            <label><input type="radio" name="elso" id="1-3"><span id="helyes1">Liszt</span></label><br>
+        <h2 class="kvizcim">II. Mi a fő összetevője a klasszikus olasz pizza tésztájának?</h2>
+            <label><input type="radio" name="masodik" id="2-1"><span id="rossz2-1">Burgonya</span></label><br>
+            <label><input type="radio" name="masodik" id="2-2"><span id="rossz2-2">Rizs</span></label><br>
+            <label><input type="radio" name="masodik" id="2-3"><span id="helyes2">Liszt</span></label><br>
+        <h2 class="kvizcim">III. Melyik fűszernél használatos a kifejezés "szerelem a konyhában"?</h2>
+            <label><input type="radio" name="harmadik" id="3-1"><span id="helyes3">Bazsalikom</span></label><br>
+            <label><input type="radio" name="harmadik" id="3-2"><span id="rossz3-2">Só</span></label><br>
+            <label><input type="radio" name="harmadik" id="3-3"><span id="rossz3-3">Kömény</span></label><br>
+        <h2 class="kvizcim">IV. Mi az a népszerű desszert, amely réteges tészta és krém rétegekből áll?</h2>
+            <label><input type="radio" name="negyedik" id="4-1"><span id="rossz4-1">Tiramisu</span></label><br>
+            <label><input type="radio" name="negyedik" id="4-2"><span id="helyes4">Mille-feuille</span></label><br>
+            <label><input type="radio" name="negyedik" id="4-3"><span id="rossz4-3">Esterházy torta</span></label><br>
+        <h2 class="kvizcim">V. Melyik technikával készül a francia hagymaleves?</h2>
+            <label><input type="radio" name="otodik" id="5-1"><span id="rossz5-1">Grillezés</span></label><br>
+            <label><input type="radio" name="otodik" id="5-2"><span id="rossz5-2">Pácolás</span></label><br>
+            <label><input type="radio" name="otodik" id="5-3"><span id="helyes5">Karamellizálás</span></label><br><br>
+        <input type="button" id="mybutton" value="Ellenőrzés!" onclick="eredmenyek()"><br><br>
+        <div class="eredmeny_kiir" id="eredmeny_kiir">A pontszámod: </div><br>
+        </article>
+    </div>
+    <footer>Kapcsolat: +36/30-123-4567 • Ez az oldal pusztán gyakorlásra szolgál</footer>
+</body>
+
+</HTML>

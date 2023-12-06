@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEBDD;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+	height: fit-content;
+    margin: 1%;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-image: url(hatterog.jpg);
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+article {
+    flex: 1 1 100%;
+    background-color: #632626;
+    padding: 0px 8px;
+    color: #ffffff;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+
+aside {
+    flex: 1 1 100%;
+    background-color: #D8B6A4;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.84em;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: rgb(179, 125, 78);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.cimtable {
+    width: 100%;
+    padding: 0;
+}
+
+.cim {
+    vertical-align: bottom;
+    font-size: 50px;
+}
+
+td img {
+    width: 4vw;
+}
+
+.appokle {
+    width: 5px;
+    vertical-align: bottom;
+    height: 80px;
+}
+
+.appokfel {
+    vertical-align: top;
+    height: 10px;
+}
+
+.jelentkezo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.jelentkezourlap {
+    width: 300px;
+    padding: 0.75%;
+    font-size: 14px;
+    background-color: #632626;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px black;
+}
+
+.jelentkezesmegnevezes {
+    font-weight: bold;
+}
+
+.jelentkezes {
+    border-radius: 0px;
+    margin: 5px;
+    background-color: #EEEBDD;
+    color: black;
+    font-weight: bold;
+}
+
+.arnyek {
+    text-shadow: 0 0 5px gray;
+}
+
+.oszlopcim {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.kezdolapasidekep {
+    width: 300px;
+    margin-top: 10px;
+    border: #ffffff solid 2px;
+}
+
+.galleria {
+    margin: auto;
+    width: 50vw;
+    height: 50vw;
+ }
+
+.kvizkuponhoz {
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.kviz {
+    background-color: #EEEBDD;
+    color: #632626;
+    text-align: center;
+    font-weight: bold;
+}
+
+.kvizleiras {
+    font-size: 15px;
+    text-shadow: 0 0 5px gray;
+}
+
+.kvizcim {
+    font-size: 25px;
+    text-shadow: 0 0 5px #BA704F;
+    text-align: center;
+}
+
+/*====MENU====*/
+
+nav {
+    padding: 8px;
+    flex: 1 1 100%;
+    background-color: white;
+    border: #3C2A21 solid 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 12px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #3C2A21;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a.active {
+    background-color: #6C3428;
+}
+
+nav li a:hover {
+    background-color: #BA704F;
+    transition: background-color 1s ease;
+}
+
+/*====OSZTALYOK====*/
+
+h2.cikkcim {
+    display: table;
+    text-align: left;
+}
+
+p.tartalom {
+    padding: 3px;
+    text-indent: 1.1em;
+}
+
+.kajak {
+    width: 200px;
+    border: #EEEBDD solid 2px;
+}
+
+.kajakside {
+    flex-basis: 70%;
+}
+
+label.error {
+    color: red
+}
+
+@media all and (min-width: 600px) {
+    /* tablet */
+    nav {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    nav li a {
+        display: block;
+        padding: 12px;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        background-color: #3C2A21;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        width: 100px;
+    }
+    article {
+        flex-basis: 100%;
+    }
+    article.jelentkezes {
+        flex-basis: 100%;
+        font-size: 15px;
+    }
+    aside {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (min-width: 945px) {
+    /* számítógép */
+    nav {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    nav li a {
+        display: block;
+        padding: 12px;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        background-color: #3C2A21;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        width: 126px;
+    }
+    article {
+        flex-basis: 48%;
+    }
+    article.jelentkezes{
+        flex-basis: 31.33%;
+    }
+    aside {
+        flex-basis: 23%;
+    }
+}
