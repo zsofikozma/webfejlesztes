@@ -70,7 +70,7 @@ footer {
 
 .cim {
     vertical-align: bottom;
-    font-size: 50px;
+    font-size: 8vw;
 }
 
 td img {
@@ -287,5 +287,11 @@ label.error {
     }
     aside {
         flex-basis: 23%;
+    }
+    .cim {
+        font-size: 50px;
+    }
+    .kezdolapasidekep {
+        width: 300px;
     }
 }
